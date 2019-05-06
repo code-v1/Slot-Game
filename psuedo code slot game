@@ -1,0 +1,14 @@
+Slot Machine Game
+
+1.Render table with 12 slots , one spin button, one 3 line button, one 5 line button and 100 credits.
+
+2.spin button will run random  sort table with images 
+
+3.scan table after every spin according to which button pressed
+ a. 1 line paysout 10 / cost 5
+ b. 3 line payout 30  / cost 15
+ c. 5 line payout 50  / cost 25
+
+4. store credits avaliable and update dom according to win 
+
+5. Auto button will play the game on (auto) generating random spins.
