@@ -11,20 +11,41 @@ const slotImage = ["atom.png","moon.png","falcon.png","fullMoon.png","rocket.png
 
 
 /*----- event listeners -----*/
-document.getElementById('spinButton').addEventListener("click", function (){
-    flipImage ();
+document.getElementById('spinBtn').addEventListener("click", function (){
+    randImage ();
 });
 
 
 /*----- functions -----*/
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    var randomInt =  Math.floor(Math.random() * (max - min + 1)) + min;
+      if (randomInt === 1) {
+        
+      }
+
   }
   
-  function flipImage() {
+  function randImage() {
+    
         var img = slotImage.length
-        var rand = Math.floor((Math.random() * img) + 0);
-        var ranimg = slotImage[rand];
-        document.appendChild("<img src='"+ranimg+"'></img>");
+        var rand = getRandomInt(0, 8);
+        var randImg = slotImage[rand];
+      return randImg;
       }
-  
+      
+      
+      
+      
+      function imageChange () {
+        
+        let counter = 0;
+        while(counter !== 9) {
+          counter++
+          
+          document.getElementById('image1').style.backgroundImage = "url('/images/atom.png')";
+          
+        }
+      }
+      // for (let value of slotImage) {
+      //   // console.log(value);
+      // }
