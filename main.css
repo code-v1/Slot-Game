@@ -1,0 +1,50 @@
+html, * {
+    font-family: helvetica;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+main {
+    display: flex;
+    
+    
+    
+    border: 2px solid black;
+}
+
+div {
+    background-color: brown;
+    
+}
+
+    
+
+
+.image1 {
+    border: 1px solid black;
+    object-fit: fill;
+    
+    
+    
+    
+    
+}
+.image2 {
+    border: 1px solid black;
+    object-fit: cover;
+}
+.image3 {
+    border: 1px solid black;
+   
+}
+.image4 {
+    border: 1px solid black;
+    
+}
