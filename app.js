@@ -53,16 +53,17 @@ function init () {
       }
       
   function spinBtn () {
+    render()
+  }
     
     var rotations = 0;
     do {
       rotations += 1;
-      spinBtn ();
+      
 
-    }
-    while (rotations < 9);
+    } while (rotations < 5)
     
-  } 
+  
   function render () {
     //render slot images
     slotOne.style.backgroundImage = `url(${checkSlot.slot1.imgUrl})`
