@@ -15,14 +15,10 @@ main {
     display: flex;
     flex-direction: row;
     border: 6px solid black;
-}
-
-div#image1,#image2,#image3,#image4 {
-    background-color: grey;
-    height: 15vh;
-    width: 5vw
     
 }
+
+
 
 #status {
     border: 2px solid black;
@@ -42,21 +38,36 @@ div#image1,#image2,#image3,#image4 {
 
 }
 
+#slots {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
 
-#image1 {
-    border: 1px solid black;
-    
+#s1 {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-right: 2px solid black
 }
-    
-#image2 {
-    border: 1px solid black;
-    
+
+#s2 {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-right: 2px solid black
 }
-#image3 {
-    border: 1px solid black;
-   
+
+#s3 {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-right: 2px solid black
 }
-#image4 {
-    border: 1px solid black;
-    
+
+#s4 {
+    height: 100px;
+    width: 100px;
+    background-size: cover
 }

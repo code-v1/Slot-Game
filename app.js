@@ -1,51 +1,73 @@
 /*----- constants -----*/
 // establish images that are gonna be used 
-const slotImage = ["atom.png","moon.png","falcon.png","fullMoon.png","rocket.png","satellite.png","sputnick.png","star.png","astronautHelmet.png"] 
+const slotImage = ["images/atom.png","images/moon.png","images/falcon.png","images/fullMoon.png","images/rocket.png","images/satellite.png","images/sputnick.png","images/star.png","images/astronautHelmet.png"] 
 
+const checkSlot = {
+  slot1: {
+    imgUrl: slotImage[randImage()]
+
+  },
+  slot2: {
+    imgUrl: slotImage[randImage()]
+  },
+  slot3: {
+    imgUrl: slotImage[randImage()]
+  },
+  slot4: {
+    imgUrl: slotImage[randImage()]
+  }
+
+};
 /*----- app's state (variables) -----*/
 
-
+let scores, result, winner;
 
 /*----- cached element references -----*/
+const slotOne = document.querySelector('#slots #s1');
+const slotTwo = document.querySelector('#slots #s2');
+const slotThree = document.querySelector('#slots #s3');
+const slotFour = document.querySelector('#slots #s4');
 
 
 
 /*----- event listeners -----*/
-document.getElementById('spinBtn').addEventListener("click", function (){
-    randImage ();
-});
+document.getElementById('spinBtn').addEventListener("click", spinBtn );
+    
 
 
 /*----- functions -----*/
-function getRandomInt(min, max) {
-    var randomInt =  Math.floor(Math.random() * (max - min + 1)) + min;
-      if (randomInt === 1) {
-        
-      }
+init ();
 
+function init () {
+  result = {
+    slot1: '',
+    slot2: '',
+    slot3: '',
+    slot4: '',
   }
+};
+
   
   function randImage() {
+    return Math.floor(Math.random() * 9);
+      }
+      
+  function spinBtn () {
     
-        var img = slotImage.length
-        var rand = getRandomInt(0, 8);
-        var randImg = slotImage[rand];
-      return randImg;
-      }
-      
-      
-      
-      
-      function imageChange () {
-        
-        let counter = 0;
-        while(counter !== 9) {
-          counter++
-          
-          document.getElementById('image1').style.backgroundImage = "url('/images/atom.png')";
-          
-        }
-      }
-      // for (let value of slotImage) {
-      //   // console.log(value);
-      // }
+    var rotations = 0;
+    do {
+      rotations += 1;
+      spinBtn ();
+
+    }
+    while (rotations < 9);
+    
+  } 
+  function render () {
+    //render slot images
+    slotOne.style.backgroundImage = `url(${checkSlot.slot1.imgUrl})`
+    slotTwo.style.backgroundImage = `url(${checkSlot.slot2.imgUrl})`
+    slotThree.style.backgroundImage = `url(${checkSlot.slot3.imgUrl})`
+    slotFour.style.backgroundImage = `url(${checkSlot.slot4.imgUrl})`
+
+  } 
