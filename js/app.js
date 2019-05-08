@@ -1,6 +1,6 @@
 /*----- constants -----*/
 // establish images that are gonna be used 
-const slotImage = ["images/atom.png","images/falcon.png","images/rocket.png","images/satellite.png","images/moon.png","images/fullMoon.png","images/sputnick.png","images/star.png","images/astronautHelmet.png"] 
+const slotImage = ["images/daniel.jpeg","images/falcon.png","images/rocket.png","images/satellite.png","images/moon.png","images/fullMoon.png","images/sputnick.png","images/star.png","images/star.png","images/star.png","images/star.png","images/star.png","images/astronautHelmet.png","images/atom.png"] 
 
 const checkSlot = {
   slot1: {
@@ -46,7 +46,7 @@ init ();
 
 
 function randImage() {
-  return Math.floor(Math.random() * 9);
+  return Math.floor(Math.random() * 14);
 }
 
 function spinBtn () {
@@ -67,6 +67,7 @@ function spinBtn () {
         cycleImage()
         render()
         countdown(--secs)
+        auto()
        
         }, 100)
       }
@@ -93,7 +94,7 @@ function spinBtn () {
   
   
   function allMatch () {
-    if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage && slotThree.style.backgroundImage === slotFour.style.backgroundImage ) { 
+    if (slotOne.style.backgroundImage === slotFour.style.backgroundImage && slotThree.style.backgroundImage === slotTwo.style.backgroundImage ) { 
       return document.getElementById('status').innerText = "All Matching";
 } else if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage || slotThree.style.backgroundImage === slotFour.style.backgroundImage || slotTwo.style.backgroundImage === slotThree.style.backgroundImage) {
   return  document.getElementById('status').innerText = "Got a Pair";
@@ -108,3 +109,22 @@ function spinBtn () {
         allMatch()
       }, 1000);
     }
+
+ var interval = null;
+
+function auto(running){
+    if(running){
+      
+      interval = setInterval(() => spinBtn(), 2000 ) * 50
+    }
+    
+       
+       else if (!running){
+        clearInterval(interval)
+      return "process complete" 
+     } else {
+      return "invalid command"
+   }
+}
+
+
