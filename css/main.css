@@ -23,12 +23,21 @@ main {
 #status {
     border: 2px solid black;
     background-color: blue;
+    font-size: 4vmin;
+    
 }
     
 #autoBtn {
     background-color: blueviolet;
     padding: 2px;
     border: 1px dashed black;
+}
+
+#stopAuto {
+    background-color: blueviolet;
+    padding: 2px;
+    border: 1px dashed black;
+
 }
 
 #spinBtn {
@@ -71,3 +80,4 @@ main {
     width: 100px;
     background-size: cover
 }
+

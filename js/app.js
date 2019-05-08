@@ -50,7 +50,7 @@ function randImage() {
 }
 
 function spinBtn () {
-  countdown(5)
+  countdown(8)
   getWinner();
  } 
   
@@ -68,7 +68,7 @@ function spinBtn () {
         render()
         countdown(--secs)
        
-        }, 10)
+        }, 100)
       }
     }
     
@@ -94,11 +94,11 @@ function spinBtn () {
   
   function allMatch () {
     if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage && slotThree.style.backgroundImage === slotFour.style.backgroundImage ) { 
-      return alert('alll matchhhiningingign');
+      return document.getElementById('status').innerText = "All Matching";
 } else if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage || slotThree.style.backgroundImage === slotFour.style.backgroundImage || slotTwo.style.backgroundImage === slotThree.style.backgroundImage) {
-  return alert("yooo got match Pair")
+  return  document.getElementById('status').innerText = "Got a Pair";
 }else if (slotOne.style.backgroundImage !== slotTwo.style.backgroundImage && slotThree.style.backgroundImage !== slotFour.style.backgroundImag ) {
-alert('Got NOTHING')
+  return document.getElementById('status').innerText = "Got Nothing";
 }
 };
 
