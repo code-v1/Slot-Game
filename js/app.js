@@ -41,7 +41,8 @@ document.getElementById('spinBtn').addEventListener("click", spinBtn );
 
 /*----- functions -----*/
 init ();
-getWinner ();
+
+
 
 
 function randImage() {
@@ -49,11 +50,9 @@ function randImage() {
 }
 
 function spinBtn () {
-  
-  
-  countdown(36)
-  
-  } 
+  countdown(5)
+  getWinner();
+ } 
   
   function cycleImage() {
     checkSlot.slot1.imgUrl =slotImage[randImage()];
@@ -68,10 +67,10 @@ function spinBtn () {
         cycleImage()
         render()
         countdown(--secs)
+       
         }, 10)
       }
     }
-    
     
     function render () {
       //render slot images
@@ -79,10 +78,6 @@ function spinBtn () {
       slotTwo.style.backgroundImage = `url(${checkSlot.slot2.imgUrl})`
       slotThree.style.backgroundImage = `url(${checkSlot.slot3.imgUrl})`
       slotFour.style.backgroundImage = `url(${checkSlot.slot4.imgUrl})`
-      
-    
-      
-      
       }
      
     
@@ -96,21 +91,20 @@ function spinBtn () {
     }
   };
   
-  function getWinner () {
-    setTimeout(function() {
-      allMatch()
-    }, 1000);
-  }
   
-
-
-
-function allMatch () {
- if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage && slotThree.style.backgroundImage === slotFour.style.backgroundImage ) { 
-  return alert('alll matchhhiningingign');
+  function allMatch () {
+    if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage && slotThree.style.backgroundImage === slotFour.style.backgroundImage ) { 
+      return alert('alll matchhhiningingign');
 } else if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage || slotThree.style.backgroundImage === slotFour.style.backgroundImage || slotTwo.style.backgroundImage === slotThree.style.backgroundImage) {
-return alert("yooo got match Pair")
+  return alert("yooo got match Pair")
 }else if (slotOne.style.backgroundImage !== slotTwo.style.backgroundImage && slotThree.style.backgroundImage !== slotFour.style.backgroundImag ) {
 alert('Got NOTHING')
 }
 };
+
+
+    function getWinner () {
+      setTimeout(function() {
+        allMatch()
+      }, 1000);
+    }
