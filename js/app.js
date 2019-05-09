@@ -46,7 +46,7 @@ init ();
 
 
 function randImage() {
-  return Math.floor(Math.random() * 14);
+  return Math.floor(Math.random() * 10);
 }
 
 function spinBtn () {
@@ -79,6 +79,7 @@ function spinBtn () {
       slotTwo.style.backgroundImage = `url(${checkSlot.slot2.imgUrl})`
       slotThree.style.backgroundImage = `url(${checkSlot.slot3.imgUrl})`
       slotFour.style.backgroundImage = `url(${checkSlot.slot4.imgUrl})`
+      
       }
      
     
@@ -94,12 +95,17 @@ function spinBtn () {
   
   
   function allMatch () {
-    if (slotOne.style.backgroundImage === slotFour.style.backgroundImage && slotThree.style.backgroundImage === slotTwo.style.backgroundImage ) { 
-      return document.getElementById('status').innerText = "All Matching";
+    if (slotOne.style.backgroundImage === slotFour.style.backgroundImage && slotTwo.style.backgroundImage === slotThree.style.backgroundImage && slotOne.style.backgroundImage === slotTwo.style.backgroundColor  slotThree.style.backgroundImage === slotFour.style.backgroundImage) { 
+       document.getElementById('status').innerText = "All Matching";
+       slotOne.parentElement.style.border = '6px solid yellow';
 } else if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage || slotThree.style.backgroundImage === slotFour.style.backgroundImage || slotTwo.style.backgroundImage === slotThree.style.backgroundImage) {
   return  document.getElementById('status').innerText = "Got a Pair";
 }else if (slotOne.style.backgroundImage !== slotTwo.style.backgroundImage && slotThree.style.backgroundImage !== slotFour.style.backgroundImag ) {
-  return document.getElementById('status').innerText = "Got Nothing";
+   document.getElementById('status').innerText = "Got Nothing";
+  document.getElementById('status').style.border=`{ '5px double red' ? '5px dashed black'}`
+  
+
+  
 }
 };
 
