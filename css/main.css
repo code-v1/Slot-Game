@@ -9,7 +9,11 @@ html, * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(https://cdn.shopify.com/s/files/1/2688/7710/products/Galaxy_Space_Cat_Taco_Pizza_Shower_Curtain_1024x1024@2x.jpg?v=1520169069) ;
+    background-size: cover;
+    background-position: center;
   }
+
 
 main {
     display: flex;
