@@ -95,7 +95,7 @@ function spinBtn () {
   
   
   function allMatch () {
-    if (slotOne.style.backgroundImage === slotFour.style.backgroundImage && slotTwo.style.backgroundImage === slotThree.style.backgroundImage && slotOne.style.backgroundImage === slotTwo.style.backgroundColor  slotThree.style.backgroundImage === slotFour.style.backgroundImage) { 
+    if (slotOne.style.backgroundImage === slotFour.style.backgroundImage && slotTwo.style.backgroundImage === slotThree.style.backgroundImage && slotOne.style.backgroundImage === slotTwo.style.backgroundColor || slotThree.style.backgroundImage === slotFour.style.backgroundImage) { 
        document.getElementById('status').innerText = "All Matching";
        slotOne.parentElement.style.border = '6px solid yellow';
 } else if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage || slotThree.style.backgroundImage === slotFour.style.backgroundImage || slotTwo.style.backgroundImage === slotThree.style.backgroundImage) {
