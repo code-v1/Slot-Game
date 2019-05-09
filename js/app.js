@@ -18,6 +18,7 @@ const checkSlot = {
   }
 
 };
+
 /*----- app's state (variables) -----*/
 
 let scores, result, winner;
@@ -37,6 +38,11 @@ const slotFour = document.querySelector('#slots #s4');
 /*----- event listeners -----*/
 document.getElementById('spinBtn').addEventListener("click", spinBtn );
 
+document.getElementById('stopAuto').addEventListener("click", stop);
+document.querySelector('#autoBtn').addEventListener("click", function(){
+  spinBtn()
+  auto(true)
+});
 
 
 /*----- functions -----*/
@@ -67,7 +73,7 @@ function spinBtn () {
         cycleImage()
         render()
         countdown(--secs)
-        auto()
+        
        
         }, 100)
       }
@@ -116,21 +122,22 @@ function spinBtn () {
       }, 1000);
     }
 
- var interval = null;
+ 
 
-function auto(running){
-    if(running){
-      
-      interval = setInterval(() => spinBtn(), 2000 ) * 50
-    }
-    
-       
-       else if (!running){
-        clearInterval(interval)
-      return "process complete" 
-     } else {
-      return "invalid command"
-   }
+
+  let interval = null;
+
+  function auto(running) {
+      if(running){
+       interval = setInterval(() => {spinBtn()}, 3000)
+        } else if (!running){
+          clearInterval(interval)
+        return "process complete" 
+       } else {
+        return "invalid command"
+     }
+  }
+function stop ( ) {
+  auto(false);
+  console.log('stop')
 }
-
-
