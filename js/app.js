@@ -1,6 +1,6 @@
 /*----- constants -----*/
 // establish images that are gonna be used 
-const slotImage = ["images/daniel.jpeg","images/falcon.png","images/rocket.png","images/satellite.png","images/moon.png","images/fullMoon.png","images/sputnick.png","images/star.png","images/star.png","images/star.png","images/star.png","images/star.png","images/astronautHelmet.png","images/atom.png"] 
+const slotImage = ["images/daniel.jpeg","images/falcon.png","images/rocket.png","images/satellite.png","images/moon.png","images/fullMoon.png","images/sputnick.png","images/star.png","images/star.png","images/star.png","images/star.png","images/star.png","images/star.png","images/star.png","images/astronautHelmet.png","images/atom.png"] 
 
 const checkSlot = {
   slot1: {
@@ -52,7 +52,7 @@ init ();
 
 
 function randImage() {
-  return Math.floor(Math.random() * 8);
+  return Math.floor(Math.random() * 15);
 }
 
 function spinBtn () {
@@ -101,13 +101,13 @@ function spinBtn () {
   
   
   function allMatch () {
-    if (slotOne.style.backgroundImage === slotFour.style.backgroundImage && slotTwo.style.backgroundImage === slotThree.style.backgroundImage && slotOne.style.backgroundImage === slotTwo.style.backgroundColor && slotThree.style.backgroundImage === slotFour.style.backgroundImage) { 
-       document.getElementById('status').innerText = "All Matching";
-       slotOne.parentElement.style.border = '6px solid yellow';
+    if (slotTwo.style.backgroundImage === slotFour.style.backgroundImage && slotTwo.style.backgroundImage === slotThree.style.backgroundImage &&  slotOne.style.backgroundImage === slotTwo.style.backgroundImage) { 
+       document.getElementById('status').innerText = "****Full Match****";
+       
 } else if (slotOne.style.backgroundImage === slotTwo.style.backgroundImage || slotThree.style.backgroundImage === slotFour.style.backgroundImage || slotTwo.style.backgroundImage === slotThree.style.backgroundImage) {
-  return  document.getElementById('status').innerText = "Got a Pair";
+  return  document.getElementById('status').innerText = " **Pair Match**";
 }else if (slotOne.style.backgroundImage !== slotTwo.style.backgroundImage && slotThree.style.backgroundImage !== slotFour.style.backgroundImag ) {
-   document.getElementById('status').innerText = "Got Nothing";
+   document.getElementById('status').innerText = "--Spin Again--";
   document.getElementById('status').style.border=`{ '5px double red' ? '5px dashed black'}`
   
 
