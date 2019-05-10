@@ -1,7 +1,8 @@
 # Slot-Game
 ## Space themed slot machine
+Four slot machine in space! Classic twist on popular casion game.
 <br>
-How to Play
+Getting Started
 <br>
 <ol>
 <li> Press spin button to start machine
@@ -10,3 +11,17 @@ How to Play
 <ul>
 <li> Auto button runs machine for demonstration 
 <li> Stop will 'stop' the machine
+
+![slot game](/images/slot-game-screenshot.png)
+
+
+<br>
+Technologies Used:
+<ul>
+<li> Javascipt
+<li> HTML
+<li> CSS
+
+Next Steps:<br> 
+Add audio to spin and buttons <br>
+coins allotment
