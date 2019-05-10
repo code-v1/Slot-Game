@@ -19,7 +19,8 @@ html, * {
 main {
     display: flex;
     flex-direction: row;
-    border: 6px solid black;
+    border: 5px inset rgba(39,151,227,0.78);
+border-radius: 15px;
     
 }
 
@@ -28,7 +29,7 @@ main {
 #status {
     border: hidden;
     
-    font-size: 6vh;
+    font-size: 5vmin;
     color: #fff;
   text-shadow:
     0 0 5px #fff,
@@ -125,21 +126,21 @@ main {
     height: 100px;
     width: 100px;
     background-size: cover;
-    border-right: 2px solid black
+    border-right: 5px groove rgba(39,151,227,0.78);
 }
 
 #s2 {
     height: 100px;
     width: 100px;
     background-size: cover;
-    border-right: 2px solid black
+    border-right: 5px groove rgba(39,151,227,0.78);
 }
 
 #s3 {
     height: 100px;
     width: 100px;
     background-size: cover;
-    border-right: 2px solid black
+    border-right: 5px groove rgba(39,151,227,0.78);
 }
 
 #s4 {
@@ -149,6 +150,7 @@ main {
 }
 
 h1 {
+    font-size: 8vmin;
     color: rgb(255, 255, 255);
   text-shadow:
     0 0 5px #fff,
@@ -159,4 +161,5 @@ h1 {
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
+    
 }
