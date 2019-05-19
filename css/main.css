@@ -1,36 +1,37 @@
-html, * {
-    font-family: helvetica;
-    box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
-  }
-  
-  body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/images/cat-background.jpg) ;
-    background-size: cover;
-    background-position: center;
-  }
+html,
+* {
+  font-family: helvetica;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/cat-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 
 main {
-    display: flex;
-    flex-direction: row;
-    border: 5px inset rgba(39,151,227,0.78);
-border-radius: 15px;
-    
+  display: flex;
+  flex-direction: row;
+  border: 5px inset rgba(39, 151, 227, 0.78);
+  border-radius: 15px;
+
 }
 
 
 
 #status {
-    border: hidden;
-    
-    font-size: 5vmin;
-    color: #fff;
+  border: hidden;
+
+  font-size: 5vmin;
+  color: #fff;
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -40,21 +41,21 @@ border-radius: 15px;
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
-    
+
 }
-    
+
 #autoBtn {
-    -webkit-transition-duration: 0.4s; 
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   border: hidden;
   background-color: transparent;
   font-size: 20px;
 
-    
+
 }
 
 #autoBtn:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -64,22 +65,22 @@ border-radius: 15px;
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
-    
+
 }
 
 #stopAuto {
-    -webkit-transition-duration: 0.4s; 
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-    background-color: transparent;
-    padding: 2px;
-    border: hidden;
-    font-size: 20px;
-    
+  background-color: transparent;
+  padding: 2px;
+  border: hidden;
+  font-size: 20px;
+
 
 }
 
 #stopAuto:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -93,17 +94,17 @@ border-radius: 15px;
 }
 
 #spinBtn {
-    -webkit-transition-duration: 0.4s; 
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   font-size: 20px;
   border: hidden;
   background-color: transparent;
   justify-content: center;
-  
+
 }
 
 #spinBtn:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -116,42 +117,42 @@ border-radius: 15px;
 }
 
 #slots {
-    display: flex;
-    flex-direction: row;
-    
-    
+  display: flex;
+  flex-direction: row;
+
+
 }
 
 #s1 {
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    border-right: 5px groove rgba(39,151,227,0.78);
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  border-right: 5px groove rgba(39, 151, 227, 0.78);
 }
 
 #s2 {
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    border-right: 5px groove rgba(39,151,227,0.78);
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  border-right: 5px groove rgba(39, 151, 227, 0.78);
 }
 
 #s3 {
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    border-right: 5px groove rgba(39,151,227,0.78);
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  border-right: 5px groove rgba(39, 151, 227, 0.78);
 }
 
 #s4 {
-    height: 100px;
-    width: 100px;
-    background-size: cover
+  height: 100px;
+  width: 100px;
+  background-size: cover
 }
 
 h1 {
-    font-size: 8vmin;
-    color: rgb(255, 255, 255);
+  font-size: 8vmin;
+  color: rgb(255, 255, 255);
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -161,5 +162,5 @@ h1 {
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
-    
+
 }
