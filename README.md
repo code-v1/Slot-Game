@@ -56,4 +56,4 @@ Eric Tovar – [@thetovar](https://twitter.com/thetovar) – tovareric@gmail.com
 
 Any input
 
-1. Fork it (<https://github.com/code-v1/gatsby-portfolio/fork>)
+1. Fork it (<https://github.com/code-v1/Slot-Game/fork>)
