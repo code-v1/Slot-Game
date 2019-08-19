@@ -22,7 +22,9 @@ clone or download zip
 
 ## Deployment 
 
-space-slot-6750b5.netlify.com
+[Space-Slot.com](space-slot-6750b5.netlify.com)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/925e0bc6-786d-4054-a318-a1b7a73dc4a5/deploy-status)](https://app.netlify.com/sites/space-slot-6750b5/deploys)
 
 ## Release History
 
