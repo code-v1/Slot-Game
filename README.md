@@ -1,27 +1,57 @@
-# Slot-Game
-## Space themed slot machine
-Four slot machine in space! Classic twist on popular casion game.
-<br>
-Getting Started
-<br>
+# Space Slot Game
+
+> Web based slot machine
+
+Slot machine website with a space theme , get pairs or a full match!
+
+![slot screenshot](slot-game-screenshot.png)
+
+## Instructions
+
 <ol>
-<li> Press spin button to start machine
-<li> 2 matching equals a pair match (Must be touching to pair)
-<li> 4 matching equals full match
-<ul>
-<li> Auto button runs machine for demonstration 
-<li> Stop will 'stop' the machine
-
-![slot game](/images/slot-game-screenshot.png)
+<li>Press spin button to start machine
+<li>Pair match 2 slots (Must be touching to pair)
+<li>Full match (all slots match)
+<li>Auto button, runs machine for demonstration
+<li>Stop will stop machine from running
 
 
-<br>
-Technologies Used:
-<ul>
-<li> Javascipt
-<li> HTML
-<li> CSS
+## Installation
 
-Next Steps:<br> 
-Add audio to spin and buttons <br>
-coins allotment
+clone or download zip 
+
+## Deployment 
+
+space-slot-6750b5.netlify.com
+
+## Release History
+
+- 0.0.1
+  - First version
+
+## Built with
+
+<li>JavaScript
+<li>HTML
+<li>CSS
+
+
+## Meta
+
+Eric Tovar – [@thetovar](https://twitter.com/thetovar) – tovareric@gmail.com
+
+
+
+[https://github.com/code-v1](https://github.com/code-v1/)
+
+## Icebox ideas 
+
+- add sounds and more animations
+- integrate coin allotment 
+
+
+## Contributing
+
+Any input
+
+1. Fork it (<https://github.com/code-v1/gatsby-portfolio/fork>)
